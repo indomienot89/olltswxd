@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block judul %}Help Center{% endblock %}
+
+{% block konten %}
+
+<div class="alert alert-primary text-center" role="alert">
+    HELLO! Help Center
+</div>
+
+<div class="alert alert-primary text-center" role="alert">
+    <strong>Baca <a href="{{ url_for('rules') }}">Rules</a> dan <a href="{{ url_for('faq') }}">FAQ</a> Sebelum menggunakan HELLO! Help Center Bot!</strong>
+</div>
+
+<!-- <div class="alert alert-primary text-center" role="alert">
+    <strong>Read <a href="">Rules</a> before using HELLO! Help Center Bot!</strong>
+</div> -->
+
+
+<div class="col">
+    <div class="card shadow-sm p-4 h-400 mt-3">
+        <div class="d-flex align-items-center">
+            <div class="shapeicon flex-shrink-0">
+                <i class="bi bi-chat-right-fill"></i>
+            </div>
+            
+            <div class="ms-3 text-start">
+                <h6 class="mb-0">Banding Mute atau Ban</h6>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary ms-auto" onclick="pesanAdmin('HELLOHelpCenterBot', 'Halo Admin HELLO!, \nSaya ingin mengajukan Banding Mute/Ban dengan (@usernamekamu)')">Banding</button>
+        </div>
+    </div>
+    <div class="card shadow-sm p-4 h-400 mt-3">
+        <div class="d-flex align-items-center">
+            <div class="shapeicon flex-shrink-0">
+                <i class="bi bi-flag-fill"></i>
+            </div>
+            <div class="ms-3 text-start">
+                <h6 class="mb-0">Laporan Underage / Pedofil</h6>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary ms-auto" onclick="pesanAdmin('HELLOHelpCenterBot', 'Halo Admin HELLO!, \nSaya ingin melaporkan (@usernameyangingindilaporkan) karena (Underage/Pedo)')">Laporkan</button>
+        </div>
+    </div>
+    <div class="card shadow-sm p-4 h-400 mt-3">
+        <div class="d-flex align-items-center">
+            <div class="shapeicon flex-shrink-0">
+                <i class="bi bi-flag-fill"></i>
+            </div>
+            <div class="ms-3 text-start">
+                <h6 class="mb-0">Laporan Record VCG / Menjual Link Group</h6>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary ms-auto" onclick="pesanAdmin('HELLOHelpCenterBot', 'Halo Admin HELLO!, \nSaya ingin melaporkan (Aktifitas Record/Menjual Link Group)\n Berikut Link untuk ditindaklanjuti: (link)')">Laporkan</button>
+        </div>
+    </div>
+    <div class="card shadow-sm p-4 h-400 mt-3">
+        <div class="d-flex align-items-center">
+            <div class="shapeicon flex-shrink-0">
+                <i class="bi bi-envelope-arrow-down-fill"></i>
+            </div>
+            <div class="ms-3 text-start">
+                <h6 class="mb-0">Collab / Promote / Endorse</h6>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary ms-auto" onclick="pesanAdmin('HELLOHelpCenterBot', 'Halo Admin HELLO!, \nPerkenalkan Kami dari (Group Kamu) ingin melakukan (Collab/Endorse/Promote) dengan HELLO! Groups')">Chat Admin</button>
+        </div>
+    </div>
+    <div class="card shadow-sm p-4 h-400 mt-3">
+        <div class="d-flex align-items-center">
+            <div class="shapeicon flex-shrink-0">
+                <i class="bi bi-person-fill-x"></i>
+            </div>
+            <div class="ms-3 text-start">
+                <h6 class="mb-0">Lapor Faker Caper</h6>
+            </div>
+            <a href="https://t.me/HELLOFakerCaperBot" class="btn btn-sm btn-primary ms-auto">Pengaduan Faker</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block judul %}Channels{% endblock %}
+
+{% block konten %}
+
+<div class="alert alert-primary text-center" role="alert">
+    HELLO! Official Channels
+</div>
+
+<div class="row g-4">
+    <div class="col-sm-6">
+        <div class="card text-center">
+          <img src="{{ url_for('static', filename='img/hoc.png') }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">HELLO! Channel Talk?</h5> -->
+            <p class="card-text">Channel HELLO! for Information and Updates. Got muted/banned? That means you're not allowed here!</p>
+            <a href="https://t.me/HELLOOfficialCH" class="btn btn-primary">Join Channel</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center">
+          <img src="{{ url_for('static', filename='img/hhc.png') }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">HELLO! Channel Show?</h5> -->
+            <p class="card-text">Channel HELLO! for info atau bacaan seputar kesehatan yang berguna. Untuk melakukan Konsultasi Telemedicine bisa klik tombol Konsultasi</p>
+            <a href="https://t.me/HELLOHealthcare" class="btn btn-primary">Join Channel</a>
+            <a href="https://t.me/HELLOHealthcare_Bot" class="btn btn-primary">Konsultasi</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center">
+          <img src="{{ url_for('static', filename='img/hfc.png') }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">HELLO! Channel Show?</h5> -->
+            <p class="card-text">Channel HELLO! for Info akun-akun yang CAPER tapi ternyata FAKE di HELLO! Groups. Kalau mau submit akun-akun yang caper tapi ternyata faker, silakan kirim foto akun Tele dan akun IG/Twitter(X) yang digunakan</p>
+            <a href="https://t.me/HELLOFakerCaper" class="btn btn-primary">Join Channel</a>
+            <a href="https://t.me/HELLOFakerCaperBot" class="btn btn-primary">Pengaduan Faker</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center">
+          <img src="{{ url_for('static', filename='img/hfs.png') }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">HELLO! Channel Talk?</h5> -->
+            <p class="card-text">Channel HELLO! for Flash Share media. Grab it before its too late </p>
+            <a href="https://t.me/helloflashshare" class="btn btn-primary">Join Channel</a>
+          </div>
+        </div>
+      </div>
+</div>
+<br>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block judul %}Membership Check{% endblock %}
+
+{% block konten %}
+
+<div class="alert alert-primary text-center" role="alert">
+    Membership Check
+</div>
+
+<div class="card shadow-sm p-4 text-center">
+
+    <div class="d-flex justify-content-center">
+        <div id="loading" class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- HASIL -->
+    <div id="result" style="display: none;">
+        <h4 class="mt-2">Data User</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between"><b>ID</b> <span id="uid"></span></li>
+            <li class="list-group-item d-flex justify-content-between"><b>Nama</b> <span id="fname"></span></li>
+            <li class="list-group-item d-flex justify-content-between"><b>Username</b> <span id="uname"></span></li>
+        </ul>
+
+        <h4 class="mt-3">Status Membership</h4>
+        <ul class="list-group mb-4" id="membership-list"></ul>
+    </div>
+</div>
+
+
+{% endblock %}

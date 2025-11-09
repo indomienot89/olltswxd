@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block judul %}FAQ{% endblock %}
+
+{% block konten %}
+
+<div class="alert alert-primary text-center" role="alert">
+    Frequently Asked Questions
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    Untuk Rules lebih lanjut, silakan kunjungi Bot HELLO! This is FAQ! <a href="https://t.me/HelloFAQ_bot">disini</a>.<br>
+    Member lama dan member baru sering sekali menanyakan hal yang sama, silakan scroll untuk mencari jawaban dari pertanyaan yang anda cari.
+  </div>
+</div>
+
+<div class="row mt-3">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Min, Kenapa saya di Mute sampai tanggal (00) bulan (00) tahun (0000)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Jika ternyata kesalahan bot, maka langsung kami unmute, namun jika kesalahan anda karena mengetik hal terlarang yang melanggar, silakan menunggu sampai waktu selesai.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Min, kenapa saya di-Mute Permanen?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Berarti anda melanggar peraturan yang ada, silakan cek rules grup yang anda terkena mute.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Min, kenapa saya di-Mute di VCG?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Anda berisik di VCG, ngobrol gak jelas, stel musik, bahkan stel apapun yang berbau agama.
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Saya merasa tidak melanggar aturan apapun
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Akun anda akan kami cek melalui database kami, silakan chat <a href="https://t.me/HELLOHelpCenterBot">disini</a> untuk lebih lanjut.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Bolehkah membagikan link invite grup ke luar?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Tergantung kebijakan grup. Beberapa grup melarang share link demi privasi dan keamanan. Cek rules grup atau tanyakan ke admin sebelum membagikan.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Kenapa pesan saya dihapus oleh bot?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Pesan dapat dihapus otomatis jika mengandung kata terlarang, spam, link terlarang, atau melanggar aturan lain. Periksa rules dan hindari konten yang dilarang.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Bagaimana cara mengajukan banding/appeal jika terkena mute atau ban?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Hubungi silakan chat <a href="https://t.me/HELLOHelpCenterBot">disini</a> untuk lebih lanjut. jelaskan kronologi singkat dan sertakan bukti jika ada. Banding diproses sesuai kebijakan grup dan keputusan admin bersifat final.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Min, kenapa saya tidak bisa chat orang duluan? Ada tanda seru merah.
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    ITU BUKAN DI-BAN OLEH ADMIN, tapi anda terkena LIMIT, yang memberikan limit itu dari TELEGRAM langsung. Admin grup manapun tidak ada hubungan dengan kasus anda kena limit. Silakan check <a href="https://t.me/SpamBot">disini</a> untuk info lebih lanjut.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
